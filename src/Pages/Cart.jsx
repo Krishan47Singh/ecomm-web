@@ -16,19 +16,23 @@ const Cart = () => {
       <div className="cart-items">
         {cart.map(product => (
           <div key={product.id} className='cart-img'>
-            <img src={product.image} alt={product.title}/>
-           <div>
-           <h3>{product.title}</h3>
-            <p>Total item: {product.quantity} <br /> Price: {product.price}</p>
-            <button onClick={() => dispatch(removeFromCart(product))}>Remove</button>
-           </div>
+            <img src={product.image} alt={product.title} />
+            <div>
+              <h3>{product.title}</h3>
+              <p>Total item: {product.quantity} <br /> Price: {product.price}</p>
+              <button onClick={() => dispatch(removeFromCart(product))}>Remove</button>
+            </div>
           </div>
         ))}
       </div>
-      <h2>Total: ${totalPrice}</h2>
-      <Link to="/checkout">
-      <button>Proceed to Checkout</button>
-      </Link>
+      <div className='tptc'>
+        <h2>Amount </h2>
+        <h2>{totalPrice}</h2> <br />
+        <Link to="/checkout">
+          <button>Proceed to Checkout</button>
+        </Link>
+      </div>
+
     </div>
   );
 };

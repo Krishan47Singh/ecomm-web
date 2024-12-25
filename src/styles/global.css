@@ -32,34 +32,6 @@
     }
   }
 
-  /* footer{
-    padding: 30px;
-    background-color: #68516b;
-    color: #f4f4f4;
-  }
-  footer p{
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .Social{
-    display: flex;
-    gap: 60px;
-  }
-  .Social a{
-    font-size: 18px;
-    display: flex;
-    gap: 15px;
-  }
-
-  .social-link{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  } */
-
-  /* -------------------------------------------------  */
-
 /* Footer Styles */
 footer {
   background-color: rgb(105, 105, 99);
@@ -74,7 +46,7 @@ footer h2 {
 }
 
 footer p {
-  margin-top: 20px;
+ 
   font-size: 14px;
 }
 
@@ -88,10 +60,10 @@ footer p {
 } 
 
 @media (max-width: 480px) {
-
-
+  footer{
+    padding: 20px;
+  }
   footer p {
     font-size: 12px;
   }
-
 }
