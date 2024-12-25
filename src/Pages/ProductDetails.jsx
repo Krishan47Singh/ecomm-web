@@ -16,10 +16,13 @@ const ProductDetails = () => {
   if (!product) return <div>Loading...</div>;
 
   return (
+    <>
+    <h1>Product Details</h1>
     <div className="product-detail">
+      
       <img src={product.image} alt={product.name} />
       <div className="product-info">
-        <h1>{product.title}</h1>
+        <h2>{product.title}</h2>
         <p className="price">Price: {product.price}</p>
         <div className="description">
           <h3>Description</h3>
@@ -29,6 +32,7 @@ const ProductDetails = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

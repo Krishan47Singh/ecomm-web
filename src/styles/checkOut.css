@@ -1,3 +1,11 @@
+.content h1{
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: #464646;
+}
 .checkout-form {
     display: flex;
     flex-direction: column;
@@ -19,9 +27,19 @@
     margin: 8px 0;
   }
   
-   .checkout-form button {
+  .tpo{
+    padding: 50px;
+    background: #b9b5b5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width:100%;
+    
+    
+  }
+   .tpo button {
     margin-top: 20px;
-    background-color: #407fc7;
     color: white;
     font-size: 18px;
     padding: 12px 20px;

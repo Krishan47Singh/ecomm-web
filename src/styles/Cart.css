@@ -22,16 +22,33 @@
 
   .cart-img{
     display: flex;
+    padding: 20px;
   }
 
   .cart-img button{
     margin-top: 10px;
+    font-size: 16px;
   }
-
-  .cart-page{
-    max-width: 1220px;
-    margin: auto;
-    margin-bottom: 40px;
+  .cart-img button:hover{
+    background: red;
+  }
+  
+  .cart-page h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: #464646;
+  }
+  .tptc{
+    text-align: center;
+    margin: 50px;
+  }
+ 
+  .tptc button:hover{
+    background: green;
+    font-size: 18px;
   }
   
   /* Responsive */

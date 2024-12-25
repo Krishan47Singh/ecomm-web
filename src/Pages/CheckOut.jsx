@@ -17,8 +17,9 @@ const CheckOut = () => {
 
   return (
     <div className='content'>
+      <h1>Checkout</h1>
       <form onSubmit={handleSubmit(onSubmit)} className='checkout-form'>
-        <h1>Checkout</h1>
+
         <table className='checkout-table'>
           <tbody>
             <tr>
@@ -53,9 +54,13 @@ const CheckOut = () => {
             </tr>
           </tbody>
         </table>
-        <h3>Total Price: {totalPrice.toFixed(2)}</h3> {/* Formatting the price */}
-        <button type="submit">Place Order</button>
+        <div className='tpo'>
+          <h3>Total Amount </h3>
+          <h3>{totalPrice.toFixed(2)}</h3>
+          <button type="submit">Place Order</button>
+        </div>
       </form>
+
     </div>
   );
 };
