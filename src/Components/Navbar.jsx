@@ -10,6 +10,7 @@ const Navbar = () => {
 
   return (
     <>
+
     <nav className="navbar">
         <h2>TECH HAVEN</h2>
     </nav>

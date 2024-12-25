@@ -4,6 +4,14 @@
     margin: 40px auto;
     max-width: 1200px;
   }
+  h1{
+    color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: #464646;
+  }
   
   .product-detail img {
     width: 100%;
