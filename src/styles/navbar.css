@@ -1,16 +1,15 @@
 /* Navbar Styles */
 .navbar {
+  padding: 15px;
     color: #fff;
     background-color: rgb(105, 105, 99);
-    padding: 15px 30px;
   }
   
-  .navbar-logo h2 {
+  .navbar h2 {
     font-size: 24px;
-    margin: 0;
-    font-size: 28px;
     font-weight: 600;
     color: #fff;
+    margin: 0;
   }
   
   .navbar-links {
@@ -23,14 +22,14 @@
   }
   
   .navbar-links a {
-    margin-left: 20px;
-    padding: 5px;
+    padding: 10px;
     color: rgb(244, 238, 238);
     font-weight: 500;
     text-transform: uppercase;
   }
   
   .navbar-links a:hover {
+    
     color: black;
     background-color: #d25134;
     border-radius: 10px;
@@ -39,8 +38,8 @@
   
   /* Cart count styles */
   .cart-count {
-    background-color: #FF5733;
-    color: white;
+    background-color: #f4f1f1;
+    color: #1b1b1b;
     border-radius: 50%;
     padding:5px 10px;
     font-size: 14px;
@@ -66,4 +65,13 @@
       text-align: left;
     }
   }
-  
+  @media (max-width: 480px) {
+    .navbar-links a {
+      font-size: 14px;
+      width: 100%;
+      text-align: left;
+    }
+    .navbar-logo h2 {
+      font-size: 20px;
+    }
+  }
