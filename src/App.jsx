@@ -1,10 +1,10 @@
 import './styles/global.css'; 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import HomePage from './Pages/HomePage';
-import ProductDetailsPage from './Pages/ProductDetailsPage';
-import CartPage from './Pages/CartPage';
-import CheckoutPage from './Pages/ChekoutPage';
+import Home from './Pages/Home';
+import ProductDetails from './Pages/ProductDetails';
+import Cart from './Pages/Cart';
+import CheckOut from './Pages/CheckOut';
 import Footer from './Components/Footer';
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/product/:id" element={<ProductDetailsPage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<CheckOut />} />
       </Routes>
       <Footer/>
     </Router>

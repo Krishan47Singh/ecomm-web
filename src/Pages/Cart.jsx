@@ -1,10 +1,10 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart } from '../Redux/Cartslice';
-import "../styles/cartPage.css";
+import "../styles/Cart.css";
 import { Link } from 'react-router-dom';
 
-const CartPage = () => {
+const Cart = () => {
   const cart = useSelector(state => state.cart.products);
   const dispatch = useDispatch();
 
@@ -33,4 +33,4 @@ const CartPage = () => {
   );
 };
 
-export default CartPage;
+export default Cart;

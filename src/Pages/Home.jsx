@@ -3,9 +3,9 @@ import axios from 'axios';
 import ProductCard from '../Components/ProductCard';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../Redux/Cartslice';
-import '../styles/homePage.css';
+import '../styles/Home.css';
 
-const HomePage = () => {
+const Home = () => {
   const [products, setProducts] = useState([]);
   const dispatch = useDispatch();
 
@@ -31,4 +31,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;

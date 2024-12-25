@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import "../styles/productDetailsPage.css"
+import "../styles/productDetails.css"
 
-const ProductDetailsPage = () => {
+const ProductDetails = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
 
@@ -32,4 +32,4 @@ const ProductDetailsPage = () => {
   );
 };
 
-export default ProductDetailsPage;
+export default ProductDetails;

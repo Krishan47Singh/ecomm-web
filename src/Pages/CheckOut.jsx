@@ -1,9 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useSelector } from 'react-redux';
-import '../styles/checkoutPage.css';
+import '../styles/checkOut.css';
 
-const CheckoutPage = () => {
+const CheckOut = () => {
   const { handleSubmit, register } = useForm(); // Register the form fields with react-hook-form
   const cart = useSelector(state => state.cart.products);
 
@@ -60,4 +60,4 @@ const CheckoutPage = () => {
   );
 };
 
-export default CheckoutPage;
+export default CheckOut;
