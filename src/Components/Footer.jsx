@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; {new Date().getFullYear()} <span>Krishan</span>. All rights reserved</p>
+      <p>&copy; {new Date().getFullYear()} <span>Tech Haven</span>. All rights reserved.</p>
     </footer>
   );
 };

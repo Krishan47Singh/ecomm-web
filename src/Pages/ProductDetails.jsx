@@ -17,21 +17,35 @@ const ProductDetails = () => {
 
   return (
     <>
-    <h1>Product Details</h1>
-    <div className="product-detail">
-      
-      <img src={product.image} alt={product.name} />
-      <div className="product-info">
-        <h2>{product.title}</h2>
-        <p className="price">Price: {product.price}</p>
-        <div className="description">
+      <h1>Product Details</h1>
+      <div className='prdctdtl'>
+        <div className='img'>
+          <img src={product.image} alt={product.name} />
+        </div>
+        <div className='pinfo'>
+          <h2>{product.title}</h2>
+          <p className="price">Amount  {product.price}</p>
           <h3>Description</h3>
-          <p>{product.description}</p>
-          <p>Category: {product.category} </p>
-          <p>Rating: {product.rating.rate} </p>
+            <p>{product.description}</p>
+            <p>Category: {product.category} </p>
+            <p>Rating: {product.rating.rate} </p>
         </div>
       </div>
-    </div>
+
+
+      {/* <div className="product-detail">
+        <img src={product.image} alt={product.name} />
+        <div className="product-info">
+          <h2>{product.title}</h2>
+          <p className="price">Price: {product.price}</p>
+          <div className="description">
+            <h3>Description</h3>
+            <p>{product.description}</p>
+            <p>Category: {product.category} </p>
+            <p>Rating: {product.rating.rate} </p>
+          </div>
+        </div>
+      </div> */}
     </>
   );
 };
