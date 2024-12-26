@@ -27,7 +27,7 @@ const Cart = () => {
       </div>
       <div className='tptc'>
         <h2>Amount </h2>
-        <h2>{totalPrice}</h2> <br />
+        <h2>{totalPrice.toFixed(2)}</h2> <br />
         <Link to="/checkout">
           <button>Proceed to Checkout</button>
         </Link>
