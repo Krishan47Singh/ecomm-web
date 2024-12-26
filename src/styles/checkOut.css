@@ -54,8 +54,6 @@
     border-radius: 5px;
     border: 1px solid #e0d7d7;
   }
-
-
   /* Responsive */
   @media (max-width: 768px) {
     .checkout-form {

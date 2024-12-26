@@ -12,7 +12,7 @@ const CheckOut = () => {
 
   const onSubmit = (data) => {
     console.log('Order submitted:', data);
-    alert("Order submitted");
+    alert("Submitted Successfully");
   };
 
   return (
