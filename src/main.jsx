@@ -5,8 +5,4 @@ import { Provider } from 'react-redux';
 import store from './Redux/Store';
 
 const container=ReactDOM.createRoot(document.getElementById("root"));
-container.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
-);
+container.render(<Provider store={store}> <App /> </Provider>);

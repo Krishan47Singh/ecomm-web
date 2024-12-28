@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 const Cart = () => {
   const cart = useSelector(state => state.cart.products);
   const dispatch = useDispatch();
-
   const totalPrice = cart.reduce((total, product) => total + product.price * product.quantity, 0);
 
   return (
@@ -32,9 +31,7 @@ const Cart = () => {
           <button>Proceed to Checkout</button>
         </Link>
       </div>
-
     </div>
   );
 };
-
 export default Cart;

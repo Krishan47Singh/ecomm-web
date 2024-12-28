@@ -13,22 +13,17 @@ const Home = () => {
     axios.get('https://fakestoreapi.com/products')
       .then(response => setProducts(response.data))
       .catch(error => console.error('Error fetching products:', error));
-  }, []);
+  },[]);
 
   return (
     <div>
       <h1 className='home-h1'>Products</h1>
       <div className="product-list">
-        {products.map(product => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            onAddToCart={() => dispatch(addToCart(product))}
-          />
-        ))}
+        { products.map(product => (
+          <ProductCard key={product.id} product={product} onAddToCart={() => dispatch(addToCart(product))} />
+        )) }
       </div>
     </div>
   );
 };
-
 export default Home;

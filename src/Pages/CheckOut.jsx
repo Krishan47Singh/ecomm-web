@@ -4,12 +4,9 @@ import { useSelector } from 'react-redux';
 import '../styles/checkOut.css';
 
 const CheckOut = () => {
-  const { handleSubmit, register } = useForm(); // Register the form fields with react-hook-form
+  const { handleSubmit, register } = useForm();
   const cart = useSelector(state => state.cart.products);
-
-  // Calculate the total price
   const totalPrice = cart.reduce((total, product) => total + product.price * product.quantity, 0);
-
   const onSubmit = (data) => {
     console.log('Order submitted:', data);
     alert("Submitted Successfully");
@@ -19,27 +16,19 @@ const CheckOut = () => {
     <div className='content'>
       <h1>Checkout</h1>
       <form onSubmit={handleSubmit(onSubmit)} className='checkout-form'>
-
         <table className='checkout-table'>
           <tbody>
             <tr>
               <td><label>Name </label></td>
               <td>
-                <input
-                  type="text"
-                  placeholder='Enter your name'
-                  {...register('name', { required: true })} // Hook form integration
-                />
+                <input type="text" placeholder='Enter your name' {...register('name', { required: true })}/>
               </td>
             </tr>
             <tr>
               <td><label>Address </label></td>
               <td>
-                <input
-                  type="text"
-                  placeholder='Enter your address'
-                  {...register('address', { required: true })} // Hook form integration
-                />
+                <input type="text" placeholder='Enter your address'{...register('address', 
+                  { required: true })} />
               </td>
             </tr>
             <tr>
@@ -60,9 +49,7 @@ const CheckOut = () => {
           <button type="submit">Place Order</button>
         </div>
       </form>
-
     </div>
   );
 };
-
 export default CheckOut;

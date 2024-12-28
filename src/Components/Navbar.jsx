@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import '../styles/navbar.css'; // Importing custom CSS for the navbar
+import '../styles/navbar.css'; 
 
 const Navbar = () => {
-  const cart = useSelector(state => state.cart.products); // Get the cart items from Redux store
-
-  const totalItems = cart.reduce((total, product) => total + product.quantity, 0); // Calculate the total number of items in the cart
+  const cart = useSelector(state => state.cart.products);
+  const totalItems = cart.reduce((total, product) => total + product.quantity, 0); 
 
   return (
     <>
-
     <nav className="navbar">
         <h2>TECH HAVEN</h2>
     </nav>
@@ -23,10 +21,7 @@ const Navbar = () => {
             <Link to="/checkout">Checkout</Link>
         </div>
       </div>
-    </>
-    
-    
+    </> 
   );
 };
-
 export default Navbar;

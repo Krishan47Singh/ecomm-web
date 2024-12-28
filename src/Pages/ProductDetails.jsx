@@ -31,23 +31,7 @@ const ProductDetails = () => {
             <p>Rating: {product.rating.rate} </p>
         </div>
       </div>
-
-
-      {/* <div className="product-detail">
-        <img src={product.image} alt={product.name} />
-        <div className="product-info">
-          <h2>{product.title}</h2>
-          <p className="price">Price: {product.price}</p>
-          <div className="description">
-            <h3>Description</h3>
-            <p>{product.description}</p>
-            <p>Category: {product.category} </p>
-            <p>Rating: {product.rating.rate} </p>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };
-
 export default ProductDetails;

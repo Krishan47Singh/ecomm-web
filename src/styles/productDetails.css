@@ -38,7 +38,7 @@ h1{
     font-size: 20px;
   }
   
-  /* Responsive Product Detail */
+  /* Responsive */
   @media (max-width: 768px) {
     .prdctdtl {
      justify-content: center;

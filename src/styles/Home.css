@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; /* Ensures all cards are the same height */
+  height: 100%; 
 }
 
 .product-card:hover {
@@ -22,15 +22,15 @@
 
 .product-card img {
   width: 100%;
-  height: 200px; /* Set a fixed height for images */
-  object-fit: cover; /* Ensures images maintain aspect ratio */
+  height: 200px; 
+  object-fit: cover; 
   border-radius: 5px;
 }
 
 .product-card h3 {
   font-size: 12px;
   margin: 10px 0;
-  flex-grow: 1; /* Push content to fill available space */
+  flex-grow: 1;
 }
 
 .product-card p {
@@ -40,7 +40,7 @@
 }
 
 .product-card button {
-  margin-top: auto; /* Push button to the bottom */
+  margin-top: auto; 
   background-color: #333333;
   color: white;
   padding: 10px 15px;
@@ -77,10 +77,10 @@
 }
 
 .product-image-wrapper {
-  width: 80%; /* Adjust width to make the image smaller relative to the card */
-  height: 150px; /* Decrease height to make the image smaller */
-  margin: 0 auto; /* Center the image wrapper within the card */
-  overflow: hidden; /* Prevent image overflow */
+  width: 80%; 
+  height: 150px; 
+  margin: 0 auto; 
+  overflow: hidden;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -90,9 +90,8 @@
 .product-image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image fits within the wrapper without distortion */
+  object-fit: cover;
 }
-
 
 .product-card h3 {
   margin: 10px 0;
@@ -102,7 +101,6 @@
 .product-card h4 {
   margin: 10px 0;
 }
-
 
 .product-card button {
   margin-top: auto;
@@ -122,6 +120,7 @@
 .view-detail {
   font-weight: 600;
 }
+
   /* Responsive */
   @media (max-width: 980px) {
     .product-list {

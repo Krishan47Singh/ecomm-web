@@ -1,4 +1,3 @@
-import './styles/global.css'; 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
@@ -6,8 +5,9 @@ import ProductDetails from './Pages/ProductDetails';
 import Cart from './Pages/Cart';
 import CheckOut from './Pages/CheckOut';
 import Footer from './Components/Footer';
+import './styles/global.css'; 
 
-function App() {
+function App(){
   return (
     <Router>
       <Navbar />
